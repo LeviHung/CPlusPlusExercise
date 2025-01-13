@@ -1,10 +1,9 @@
-// Levi Hung
-// CS 116 Lab 2
-// This program computes the tax and tip on a restaurant bill.
+/*Very nice program.  You might consider using getline for the name in case someone types in their first and last name.*/
 
 #include <iostream>
 #include <iomanip>
 using namespace std;
+//#include <string>
 
 /*THE ALGORITHM:
   1.  Set up variables for name, meal cost, tax, less tip, more tip, 
@@ -21,7 +20,12 @@ using namespace std;
   8.  Output the meal cost, tax, tip(15%), tip(20%), 
       your total bill after 15% gratuity, and your total bill after 20% gratuity. */
 
-int main() {
+// Levi Hung
+// Section 17664
+// Lab 2
+// This program computes the tax and tip on a restaurant bill.
+
+int CS_116_Lab_2_Input_Output_Tax_and_Tip() {
   string name;
   float  mealCost;
   float  tax;
@@ -34,9 +38,7 @@ int main() {
   const float LESS_TIP_RATE = 0.15;
   const float MORE_TIP_RATE = 0.20;
 
-  // Consider using getline for the name in case 
-  // someone types in their first and last name.
-  cout << "Enter your name:  ";
+  cout << "Enter your first name:  ";
   getline (cin, name);
   cout << "Enter the meal cost: ";
   cin >> mealCost; 
